@@ -1,0 +1,7 @@
+{
+  "name": "sama deukouway",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
