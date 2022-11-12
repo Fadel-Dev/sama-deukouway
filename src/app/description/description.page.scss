@@ -16,3 +16,10 @@
 .favoris {
     font-size: 20px;
 }
+
+// the two buttons
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
