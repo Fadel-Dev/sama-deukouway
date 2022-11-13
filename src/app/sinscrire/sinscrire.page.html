@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-pading">
+  <div class="form">
+    <!-- NAME -->
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input [(ngModel)]='name'></ion-input>
+    </ion-item>
+   <!-- EMAIL -->
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]='email'></ion-input>
+    </ion-item>
+    <!-- ADRESSE -->
+    <ion-item>
+      <ion-label position="stacked">Adresse</ion-label>
+      <ion-input [(ngModel)]='adresse'></ion-input>
+    </ion-item>
+    <!-- TELEPHONE -->
+    <ion-item>
+      <ion-label position="stacked">Telephone</ion-label>
+      <ion-input [(ngModel)]='telephone'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [(ngModel)]='password'></ion-input>
+    </ion-item>
+    <ion-button (click)='signup()' expand='block'>Signup</ion-button>
+  </div>
+  <div>
+    <h5 (click)='signup()'>aller a la page de connexion <ion-text color='primary' routerLink="/se-connecter">Se connecter</ion-text>
+    </h5>
+  </div>
+</ion-content>
