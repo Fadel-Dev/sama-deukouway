@@ -8,7 +8,7 @@
 }
 ion-content.background {
     font-family: poppins;
-   --ion-background-color:  #6d071a;
+    --background: url("../../assets/img/hotel.jpg") no-repeat center/cover fixed;
 }
 .log {
     color: #fff;
@@ -23,8 +23,25 @@ ion-content.background {
 
 .btn {
     margin-top: 50px;
+    opacity: 0.7;
 }
 .monicon {
     margin-right:10px;
     color: #fff;
+}
+h5 {
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    opacity: 0.8;
+}
+.login {
+    margin-top: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    width: 45%;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
