@@ -4,7 +4,6 @@
     <ion-icon name="person-circle"></ion-icon>
   </span>
   <div class="form">
-
     <ion-item lines="none" color="none" color="dark" style="opacity: 0.8;">
       <ion-icon name="mail-outline" class="monicon" ></ion-icon><ion-label color="light">Email</ion-label>
       <ion-input  [(ngModel)]='email' placeholder=" Votre email"></ion-input>
@@ -16,6 +15,18 @@
       <ion-input [(ngModel)]='password' placeholder="Mot de passe"></ion-input>
     </ion-item>
     <ion-button class="btn-connexion" (click)='login()' expand='block' shape="round" color="light">Se connecter</ion-button>
+    <ion-item lines="none">
+      <ion-icon name="mail-outline" class="monicon" ></ion-icon><ion-label  color="light">Email</ion-label>
+      <ion-input color="light"  [(ngModel)]='email' placeholder=" Votre email"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-item lines="none">
+      <ion-icon name="lock-closed-outline" class="monicon"></ion-icon><ion-label color="light">Password</ion-label>
+      <ion-input color="light" [(ngModel)]='password' placeholder="Mot de passe"></ion-input>
+    </ion-item>
+
+    <ion-button class="btn" expand="block" shape="round" size="large" color="light">connexion</ion-button>
     <br>
 
     <h5 (click)='signup()'> Pas de compte ?<ion-text color='light' routerLink="/sinscrire"><span>S'inscrire ici</span></ion-text>
