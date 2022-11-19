@@ -16,7 +16,7 @@
       <ion-input color="light" [(ngModel)]='password' placeholder="Mot de passe"></ion-input>
     </ion-item>
 
-    <ion-button class="btn" expand="block" shape="round"  color="light">connexion</ion-button>
+    <ion-button class="btn" (click)='login()'  expand="block" shape="round"  color="light">connexion</ion-button>
     <br>
 
     <h5 (click)='signup()'> Pas de compte ?<ion-text color='light' routerLink="/sinscrire"><span>S'inscrire ici</span></ion-text>
