@@ -18,7 +18,7 @@
 // background image
 ion-content.background {
     font-family: poppins;
-   --ion-background-color:  #6d071a;
+    --background: url('/assets/img/darkback.jpg ') no-repeat center / cover fixed;
 }
 // Bouton de connexion
 .btn {

@@ -8,7 +8,7 @@
 }
 ion-content.background {
     font-family: poppins;
-   --ion-background-color:  #6d071a;
+    --background: url('/assets/img/darkback.jpg ') no-repeat center / cover fixed;
 }
 .log {
     color: #fff;
@@ -27,4 +27,22 @@ ion-content.background {
 .monicon {
     margin-right:10px;
     color: #fff;
+}
+h5 {
+    color: #fff;
+    text-align: center;
+}
+ion-item {
+    margin-bottom: 15px;
+}
+h5 span {
+    display: block;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 15px;
 }
