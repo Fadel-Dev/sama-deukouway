@@ -1,0 +1,35 @@
+
+.box .text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+}
+.box-img {
+  width: 200px;
+  height: 150px;
+  margin: auto;
+  margin-top: 25%;
+}
+.box-img h1{
+    margin: 0;
+    color: #fff;
+}
+.box-img img{
+    border-radius: 50%;
+  
+}
+ion-content {
+    font-family: poppins;
+    --background: url('/assets/img/illustration.jpeg ') no-repeat center / cover fixed;
+}
+.box {
+    backdrop-filter: blur(10px);
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+}
+.btn {
+    margin-top: 50%;
+    display: flex;
+    justify-content: space-around;
+}
