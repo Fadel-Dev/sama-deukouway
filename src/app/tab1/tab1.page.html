@@ -24,27 +24,18 @@
  
 
  <!-- Inserer une carte  -->
- <ion-card routerLink="/description">
-  <ion-card-title style="text-align: center;">Card Title</ion-card-title>
+ <ion-card routerLink="/description" *ngFor="let oneHouse of items |async">
+  <ion-card-title style="text-align: center;">{{oneHouse.loc_vente}}</ion-card-title>
   <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/44/a3/07/44a307d15c9dc5f1ca4c341389ced609.jpg" class="image"/>
-  <ion-card-header>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+  <ion-card-header class="prixLieu">
+    <ion-card-subtitle >{{oneHouse.lieu}}</ion-card-subtitle>
+    <ion-card-subtitle class="price">{{oneHouse.prix}}</ion-card-subtitle>
   </ion-card-header>
 
   <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
+    {{oneHouse.description}}
   </ion-card-content>
 </ion-card>
-<ion-card>
-  <ion-card-title style="text-align: center;">Card Title</ion-card-title>
-  <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/c6/55/e9/c655e93134963f9844882f57ea64df14.jpg" class="image" />
-  <ion-card-header>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
 
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
 
 </ion-content>

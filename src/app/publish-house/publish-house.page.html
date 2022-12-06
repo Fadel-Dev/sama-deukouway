@@ -1,0 +1,48 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>publishHouse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+<ion-content class="ion-pading background" >
+  <div class="form">
+    <span class="log">
+      <ion-icon name="person-circle"></ion-icon>
+    </span>
+    <!-- type d habitat -->
+    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+      <ion-icon name="person-circle-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Type</ion-label>
+      <ion-input color="light" class="input-field " placeholder="maison ou app" [(ngModel)]='type'></ion-input>
+    </ion-item>
+   <!-- loc ou vente -->
+   <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+    <ion-icon name="person-circle-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Loc ou Vente</ion-label>
+    <ion-input color="light" class="input-field " placeholder="maison ou app" [(ngModel)]='loc_vente'></ion-input>
+  </ion-item>
+    <!-- lieu -->
+    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+      <ion-icon name="location-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Adresse</ion-label>
+      <ion-input color="light" class="input-field" placeholder="adresse" [(ngModel)]='lieu'></ion-input>
+    </ion-item>
+    <!-- description -->
+    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+      <ion-icon name="location-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">description</ion-label>
+      <ion-input color="light" class="input-field" placeholder="description" [(ngModel)]='description'></ion-input>
+    </ion-item>
+    <!-- prix -->
+    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+      <ion-icon name="call-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Prix</ion-label>
+      <ion-input color="light" class="input-field" placeholder='650096' [(ngModel)]='prix'></ion-input>></ion-input>
+    </ion-item>
+    
+    <ion-button (click)='signup()' expand='block' class="btn" shape="round" color="light">Signup</ion-button>
+  </div>
+  <div>
+    <h5 (click)='signup()'>Aller a la page de connexion pour <ion-text color='primary' routerLink="/se-connecter"><span>Se connecter</span></ion-text>
+    </h5>
+  </div>
+</ion-content>

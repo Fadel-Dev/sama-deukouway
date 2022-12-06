@@ -1,19 +1,35 @@
 
 <ion-content>
   <div class="box">
-    <div class="text">
+    <!-- <div class="text">
       <ion-button shape="round" color="light">
         <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
         Profile</ion-button>
       <ion-button shape="round" color="light">Edit Profile</ion-button>
-    </div>
+    </div> -->
     <div class="box-img">
-      <img src="/assets/img/sasuke.png">
-      <h1>Sasuke Ichiwa</h1>
+      <div class="img">
+        <img src="/assets/img/sasuke.png">
+      </div>
+      <div class="info">
+        <h1>Sasuke Ichiwa</h1>
+       <span>se deconnecter</span> <br>
+       <span routerLink="/publish-house">publier une annonce</span>
+      </div>
+      
     </div>
-    <div class="btn">
-      <ion-button shape="round" color="light">publications</ion-button>
-      <ion-button shape="round" color="light">deconnexion</ion-button>
+    <h3 class="txtPub">vos publications</h3> <hr>
+    <!-- user publications -->
+    <div class="container">
+      <div class="publication">
+         <span>nom maison</span>
+      <img src="/assets/img/sasuke.png">
+      </div>
+      <div class="publication">
+        <span>nom maison</span>
+     <img src="/assets/img/sasuke.png">
+     </div>
+     
     </div>
 
   </div>
