@@ -25,7 +25,7 @@
 
  <!-- Inserer une carte  -->
  <ion-card routerLink="/description" *ngFor="let oneHouse of items |async">
-  <ion-card-title style="text-align: center;">{{oneHouse.loc_vente}}</ion-card-title>
+  <ion-card-title style="text-align: center;">{{oneHouse.type_habitat}} en {{oneHouse.loc_vente}}</ion-card-title>
   <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/44/a3/07/44a307d15c9dc5f1ca4c341389ced609.jpg" class="image"/>
   <ion-card-header class="prixLieu">
     <ion-card-subtitle >{{oneHouse.lieu}}</ion-card-subtitle>

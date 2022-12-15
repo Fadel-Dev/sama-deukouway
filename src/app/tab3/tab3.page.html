@@ -1,17 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      About
-    </ion-title>
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col>Home</ion-col>
+        <ion-col>
+         <span class="bouton">
+            <ion-icon name="search"></ion-icon>
+          <!-- search -->
+         </span>
+        </ion-col>
+        <ion-col class=" btnSeconnecter" routerLink="/se-connecter">se connecter</ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+ 
 
-  <h1>About page</h1>
+ <!-- Inserer une carte  -->
+<h1>Sama Deukouway</h1>
+
+
 </ion-content>

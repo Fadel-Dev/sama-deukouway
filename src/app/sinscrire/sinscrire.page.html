@@ -7,7 +7,7 @@
     <!-- NAME -->
     <ion-item lines="none" color="dark" style=" border-radius: 20px;">
       <ion-icon name="person-circle-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Name</ion-label>
-      <ion-input color="light" class="input-field " placeholder="Votre nom complet" [(ngModel)]='name'></ion-input>
+      <ion-input color="light" class="input-field " placeholder="Votre nom complet" [(ngModel)]='displayName'></ion-input>
     </ion-item>
    <!-- EMAIL -->
     <ion-item lines="none" color="dark" style=" border-radius: 20px;">
@@ -22,7 +22,7 @@
     <!-- TELEPHONE -->
     <ion-item lines="none" color="dark" style=" border-radius: 20px;">
       <ion-icon name="call-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Telephone</ion-label>
-      <ion-input color="light" class="input-field" placeholder='+221778650096'></ion-input>
+      <ion-input color="light" class="input-field" [(ngModel)]='phoneNumber'  placeholder='+2217x86x0x9x'></ion-input>
     </ion-item>
     <ion-item lines="none" color="dark" style=" border-radius: 20px;">
       <ion-icon name="lock-closed-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Password</ion-label>

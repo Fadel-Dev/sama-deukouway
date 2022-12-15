@@ -1,48 +1,74 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>publishHouse</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content> -->
-
-<ion-content class="ion-pading background" >
+<ion-content class="ion-pading background">
+   <h1 routerLink="/dashboard">retourner au dashboard</h1>
   <div class="form">
-    <span class="log">
-      <ion-icon name="person-circle"></ion-icon>
-    </span>
+
+
     <!-- type d habitat -->
-    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
-      <ion-icon name="person-circle-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Type</ion-label>
-      <ion-input color="light" class="input-field " placeholder="maison ou app" [(ngModel)]='type'></ion-input>
-    </ion-item>
-   <!-- loc ou vente -->
-   <ion-item lines="none" color="dark" style=" border-radius: 20px;">
-    <ion-icon name="person-circle-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Loc ou Vente</ion-label>
-    <ion-input color="light" class="input-field " placeholder="maison ou app" [(ngModel)]='loc_vente'></ion-input>
-  </ion-item>
-    <!-- lieu -->
-    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
-      <ion-icon name="location-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Adresse</ion-label>
-      <ion-input color="light" class="input-field" placeholder="adresse" [(ngModel)]='lieu'></ion-input>
-    </ion-item>
-    <!-- description -->
-    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
-      <ion-icon name="location-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">description</ion-label>
-      <ion-input color="light" class="input-field" placeholder="description" [(ngModel)]='description'></ion-input>
-    </ion-item>
-    <!-- prix -->
-    <ion-item lines="none" color="dark" style=" border-radius: 20px;">
-      <ion-icon name="call-outline" class="monicon"></ion-icon><ion-label class="addtext" color="light">Prix</ion-label>
-      <ion-input color="light" class="input-field" placeholder='650096' [(ngModel)]='prix'></ion-input>></ion-input>
-    </ion-item>
+    <ion-list lines="none" color="dark" style=" border-radius: 20px;">
+
+      <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+        <ion-icon name="home" class="monicon"></ion-icon>
+        <ion-label class="addtext" color="light">Type</ion-label>
+         <ion-select interface="popover" placeholder="veuillez selectionner"
+         [(ngModel)]="type_habitat"
+         (ionChange)="optionChanged">
+          <ion-select-option value="maison">Maison</ion-select-option>
+          <ion-select-option value="appartement">Appartement</ion-select-option>
+          <ion-select-option value="terrain">Terrain</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+
+
+    <!-- loc ou vente -->
     
-    <ion-button (click)='signup()' expand='block' class="btn" shape="round" color="light">Signup</ion-button>
-  </div>
-  <div>
-    <h5 (click)='signup()'>Aller a la page de connexion pour <ion-text color='primary' routerLink="/se-connecter"><span>Se connecter</span></ion-text>
-    </h5>
+      <ion-list lines="none" color="dark" style=" border-radius: 20px;">
+
+        <ion-item color="dark">
+          <ion-icon name="home" class="monicon"></ion-icon>
+          <ion-label class="addtext" color="light">loc && vente</ion-label>
+          <ion-select interface="popover" placeholder="Veuillez selectionner"
+          [(ngModel)]="loc_vente"
+         (ionChange)="optionChanged">
+            <ion-select-option value="location">location</ion-select-option>
+            <ion-select-option value="vente">vente</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <!-- lieu -->
+      <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+        <ion-icon name="navigate" class="monicon"></ion-icon>
+        <ion-label class="addtext" color="light">Adresse</ion-label>
+        <ion-input color="light" class="input-field" placeholder="adresse" [(ngModel)]='lieu'></ion-input>
+      </ion-item>
+      <!-- description -->
+      <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+        <ion-icon name="text" class="monicon"></ion-icon>
+        <ion-label class="addtext" color="light">description</ion-label>
+        <ion-input color="light" class="input-field" placeholder="description" [(ngModel)]='description'></ion-input>
+      </ion-item>
+      <!-- prix -->
+      <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+        <ion-icon ios="logo-usd" md="logo-usd" class="monicon"></ion-icon>
+        <ion-label class="addtext" color="light">Prix</ion-label>
+        <ion-input color="light" class="input-field" placeholder='650096' [(ngModel)]='prix'></ion-input>
+      </ion-item>
+
+      <!-- telephone -->
+      <ion-item lines="none" color="dark" style=" border-radius: 20px;">
+        <ion-icon name="call-outline" class="monicon"></ion-icon>
+        <ion-label class="addtext" color="light">telephone</ion-label>
+        <ion-input color="light" class="input-field" placeholder='7xxxxx343' [(ngModel)]='telephone'></ion-input>
+      </ion-item>
+
+
+
+
+      <ion-button (click)='addData()' expand='block' class="btn" shape="round" color="light">Poster</ion-button>
+
+
+
   </div>
 </ion-content>

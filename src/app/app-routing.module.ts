@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'publish-house',
     loadChildren: () => import('./publish-house/publish-house.module').then( m => m.PublishHousePageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
   }
 
 ];

@@ -11,9 +11,9 @@ import { FireserviceService } from '../fireservice.service';
 export class SinscrirePage implements OnInit {
   public email:any;
   public password:any;
-   public name:any;
+   public displayName:any;
    public adresse:any;
-   public telephone:number;
+   public phoneNumber:number;
   constructor( 
         public router:Router,
     public fireService:FireserviceService
@@ -22,14 +22,14 @@ export class SinscrirePage implements OnInit {
   ngOnInit() {
   }
   signup(){ 
-    this.fireService.signup({email:this.email,password:this.password}).then(res=>{
+    this.fireService.signup({email:this.email,password:this.password,phoneNumber:this.phoneNumber}).then(res=>{
       if(res.user.uid){
-        let data = {
+        let data = {    
           email:this.email,
           password:this.password,
-           name:this.name,
+           displayName:this.displayName,
            adresse:this.adresse,
-           telephone:this.telephone,
+           phoneNumber:this.phoneNumber,
           uid:res.user.uid
         }
         this.fireService.saveDetails(data).then(res=>{
